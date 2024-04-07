@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // fruits := []string{"apple", "banana", "grape"}
 // for i, fruit := range fruits {
 //     fmt.Println(i, fruit)
@@ -20,6 +22,7 @@ func indexOfFirstBadWord(msg []string, badWords []string) int {
 			if word == badWord {
 				return i
 			}
+			fmt.Println(j)
 		}
 	}
 	return -1
