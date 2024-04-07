@@ -31,11 +31,15 @@ Where DIVIDEND is the actual dividend of the divideError. Use the %v verb to for
 */
 package main
 
+import "fmt"
+
 type divideError struct {
 	dividend float64
 }
 
-// ?
+func (d divideError) Error() string {
+	return fmt.Sprintf("%.2f cant be divided by zero\n", d.dividend)
+}
 
 func divide(dividend, divisor float64) (float64, error) {
 	if divisor == 0 {
