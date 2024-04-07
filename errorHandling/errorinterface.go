@@ -10,6 +10,8 @@ func (e userError) Error() string {
     return fmt.Sprintf("%v has a problem with their account", e.name)
 }
 
+
+
 It can then be used as an error:
 
 func sendSMS(msg, userName string) error {
