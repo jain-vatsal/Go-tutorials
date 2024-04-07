@@ -1,0 +1,7 @@
+a collection of method signatures
+
+any type implementing the signatures, implement the interface.
+
+interfaces are implemented implicitly.
+
+empty interface 'interface{}' are implemented by all the types in the go program.
